@@ -26,13 +26,15 @@ const initGame = function () {
     current0Element.textContent = 0;
     current1Element.textContent = 0;
 
-    player0Element.classList.remove('player-winner');
-    player1Element.classList.remove('player-winner');
-    player0Element.classList.remove('player-active');
-    player1Element.classList.remove('player-active');
-    player0Element.classList.add('player-active');
+    player0Element.classList.remove('player--winner');
+    player1Element.classList.remove('player--winner');
+    player0Element.classList.remove('player--active');
+    player1Element.classList.remove('player--active');
+    player0Element.classList.add('player--active');
     diceElement.classList.add('hidden');
 }
+
+initGame();
 
 const switchActivePlayer = function () {
     currentScore = 0;
