@@ -166,3 +166,73 @@ main {
 .hidden {
   display: none;
 }
+
+/* Original CSS rules... */
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%; /* Adjust font size for smaller screens */
+  }
+
+  main {
+    flex-direction: column; /* Change flex-direction to stack elements vertically */
+    width: 90%; /* Reduce the width to fit the smaller screen */
+    height: auto; /* Let the height adjust according to content */
+    padding: 3rem; /* Add some padding to give space around the elements */
+  }
+
+  .player {
+    padding: 10rem; /* Reduce the padding for players */
+  }
+
+  .name {
+    font-size: 3rem; /* Reduce font size for names */
+  }
+
+  .score {
+    font-size: 6rem; /* Reduce font size for scores */
+  }
+
+  .current {
+    width: 100%; /* Take full width of the container */
+    padding: 1rem; /* Reduce padding for current container */
+    margin-top: 1rem; /* Add some space between player and current container */
+  }
+
+  .current-label {
+    font-size: 1.4rem; /* Reduce font size for current-label */
+  }
+
+  .current-score {
+    font-size: 2.5rem; /* Reduce font size for current-score */
+  }
+
+  /* Positioning Buttons Container */
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  /* Positioning Buttons */
+  .btn {
+    font-size: 1.5rem; /* Reduce font size for buttons */
+    padding: 0.5rem 2rem; /* Adjust button padding */
+    flex: 1; /* Take equal space within the container */
+    margin: 0 0.5rem; /* Add some space between buttons */
+  }
+
+  .dice {
+    height: 8rem; /* Reduce dice height */
+    margin-top: 4rem; /* Adjust dice position */
+  }
+
+  /* Additional Spacing for Players */
+  .player {
+    margin-bottom: 3rem;
+  }
+}
+
+
+
